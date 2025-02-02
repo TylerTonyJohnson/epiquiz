@@ -16,9 +16,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		height: 100vh;
+		justify-content: start;
+		min-height: 100vh;
+		padding: 4rem;
+		gap: 2rem;
 		/* background-color: chocolate; */
+		/* background-size: 100vw 100vh; */
 
 		background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
 

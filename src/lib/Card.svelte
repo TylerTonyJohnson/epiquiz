@@ -9,6 +9,7 @@
 <style>
 	.frame {
 		min-width: 40rem;
+		max-width: 90vw;
 		min-height: 10rem;
 		border: solid 2px white;
 		display: flex;
@@ -18,6 +19,6 @@
 		gap: 2.5rem;
 		border-radius: 2rem;
 		/* background-color: #0004; */
-		background-image: linear-gradient(to bottom, #0003 50%, transparent 100%);
+		background-image: linear-gradient(to top, #0003 50%, transparent 100%);
 	}
 </style>
