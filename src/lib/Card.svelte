@@ -8,7 +8,7 @@
 
 <style>
 	.frame {
-		min-width: 40rem;
+		min-width: 50vw;
 		max-width: 90vw;
 		min-height: 10rem;
 		border: solid 2px white;

@@ -17,6 +17,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: start;
+		/* width: 100%; */
 		min-height: 100vh;
 		padding: 4rem;
 		gap: 2rem;

@@ -60,6 +60,7 @@
 			preText: '',
 			postText: '',
 			answer: 'zgtozn',
+			placeholder: 'Gtyckx Nkxk',
 			image: image7
 		},
 		{
@@ -212,7 +213,7 @@
 			goToStage(currentCode);
 		}}
 	>
-		<input type="text" bind:value={currentCode} placeholder="Previous Answer" />
+		<input class='code' type="text" bind:value={currentCode} placeholder="Previous Answer" />
 	</form>
 	<button onclick={() => goForward()} disabled={currentStage >= maxStage}
 		><span class="material-symbols-outlined"> arrow_forward </span></button
@@ -247,7 +248,7 @@
 						checkAnswer(datum.answer);
 					}}
 				>
-					<input type="text" bind:value={currentAnswer} placeholder="Answer here" autofocus />
+					<input type="text" bind:value={currentAnswer} placeholder={datum?.placeholder || 'Answer Here'} autofocus />
 
 					<div class="feedback-container">
 						{#if showError}
@@ -281,7 +282,7 @@
 <style>
 	.controls {
 		display: flex;
-		min-width: 40rem;
+		min-width: 50vw;
 		max-width: 90vw;
 		justify-content: space-between;
 	}
@@ -309,6 +310,10 @@
 		max-height: 80vh;
 		border-radius: 1rem;
 		border: solid black 2px;
+	}
+
+	.code {
+		max-width: 12rem;
 	}
 
 	.input {

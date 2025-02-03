@@ -19,6 +19,16 @@ html {
 	font-family: 'Lexend Deca', sans-serif;
 }
 
+:root {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		font-size: 12px;
+	}
+}
+
 button {
 	all: unset;
 	cursor: pointer;
@@ -75,6 +85,7 @@ textarea {
 
 input {
 	all: unset;
+	/* max-width: 2rem; */
 
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 1.25rem;
